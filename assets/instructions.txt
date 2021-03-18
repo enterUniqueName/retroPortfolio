@@ -1,0 +1,43 @@
+Hi.
+First of all, let me get this out there that I am super excited about this website, I come from a very conservative art world and the 
+absolute un-professionalness of this site makes the rebel in me very happy. 
+I'm telling you this so that you can lean into any static/jumpy
+flaws that might arise from working in older style. Like I said when we first discussed, even though it is bad form, you can design this in tables.
+I gridded my design to accomidate that style. A few of the gifs need to be mirrored (they say flipped) and from what I understand you have to
+use CSS for that, but I would like to keep as much of the code in html for purity's sake. I'd like to brag about our creation's authenticity.
+
+I fully realize cross browser compatibility will be a problem, and we can handle that when it arises. Mobile compatibility might be non-existent.
+It would be great if it just looked insane on a phone.
+
+I'm sure you'll have lots of questions for me but I am going to do my best below to be as descriptive as possible.
+
+Attached is the mockup in jpeg form. I have this file set at 1025x775 in the hopes that that format would be good for most monitors.
+I designed it to be a little spacious on the width so if a monitor squeezes it in it should be ok (except maybe up around the Welcome.gif).
+
+Also attached is a map for the mockup of all the files which I have included in the folder. There is one single piece of text on the whole page, links.
+Every single other thing is a .gif except the background, which is jpeg. You might have to play with the transparency of the background if you feel it's
+too distracting.
+
+The gifs are not sized to fit my mockup....if this is a problem I can resize. 
+
+Also in the file is a .mp3 of a midi file, it is public domain. I would like that on the page with no play,mute or stop button. 
+
+I did not include anything for the visitor counter. You can probably just find one online? I trust you to pick an appropriate style.
+
+I think the obvious choice for cursor would be skull.gif (somehow skulls ended up being my theme).Also do you want something like a .png file for the browser icon?
+
+Do I need to write a description for the SEO?
+
+I would like to make welcome.gif, doyoudare.gif and alexgif.gif links to the 'gallery' page we will design next. There will also be a link to it under links called 
+"gallery".
+
+
+
+
+Gallery thoughts
+
+I'm thinking of making .gifs (I know, does everything have to be a gif?) of all the paintings that start out pixelated and resolve into a modern sized image... 
+How bad are pop-ups? I guess most browsers don't allow them without permissions? There needs to be some information about each painting, size medium etc. and
+I'd rather not do it in text on the gallery page. It would be great if somehow you could click on the image and see a really high resolution form and the information
+about it... to keep the simplicity of the gallery page just being a long scroll through images. 
+
