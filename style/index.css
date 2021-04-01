@@ -1,0 +1,146 @@
+/************************/
+/**** Index CSS ****/
+/************************/
+
+/* Font Definition */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url(../assets/fonts/museo-sans/MuseoSans_500.otf) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans';
+    src: url(../assets/fonts/museo-sans/MuseoSans_300.otf) format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans';
+    src: url(../assets/fonts/museo-sans/MuseoSans_700.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
+/* 
+| ***** Global Definitions
+*/
+.mobile-only {
+    display:none;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'MuseoSans', arial, sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body {
+    background: black;
+}
+
+.flames {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#hitCounter {
+    width: 284px;
+    height: 75px;
+    position: absolute;
+    bottom: 75px;
+    right: 0px;
+}
+#hitCounter h4 {
+    font-family: "Courier", Courier, monospace;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 12px 0 0;
+    letter-spacing: 12px;
+}
+#hitCounter p {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 4px;
+    color: white;
+    margin: 8px 0 0 0;
+    text-align: center;
+    font-family: 'MuseoSans', sans-serif;
+    font-weight: 300;
+}
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.flip {
+    transform: scaleX(-1);
+}
+.welcome img {
+    width: 50vw;
+}
+.inner-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ankhbar {
+    position:absolute;
+    bottom: -24px;
+    width: 100%;
+}
+.ankhbar img {
+    width: 100%;
+}
+.dare-container, .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.dare-text, .image-alex {
+    max-width: 500px;
+}
+.skull-candle {
+    width: 75px;
+}
+.image-alex {
+    margin: 12px 24px 0;
+}
+.blood {
+    position:absolute;
+    bottom: -10px;
+    width: 100%;
+    max-width: 500px;
+}
+.navigation {
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 30px;
+    font-size: 30px;
+    text-decoration: underline;
+    z-index: 1;
+}
+.navigation a {
+    color: #606060;
+}
