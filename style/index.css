@@ -21,6 +21,10 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'UnifrakturCook';
+    src: url(../assets/fonts/UnifrakturCook-Bold.ttf) format("truetype");
+}
 
 
 
@@ -50,6 +54,15 @@ main {
 
 body {
     background: black;
+    cursor: url(../assets/skull.gif) 50 50, auto;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    margin-top: 24px;
+    font-family: 'UnifrakturCook';
 }
 
 .flames {
