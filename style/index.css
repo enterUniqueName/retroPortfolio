@@ -57,14 +57,6 @@ body {
     cursor: url(../assets/skull.gif) 50 50, auto;
 }
 
-.page-title {
-    text-align: center;
-    font-size: 36px;
-    color: white;
-    margin-top: 24px;
-    font-family: 'UnifrakturCook';
-}
-
 .flames {
     position: absolute;
     bottom: 0;
