@@ -141,12 +141,70 @@ body {
 }
 .navigation {
     position: absolute;
-    margin-top: 12em;
-    margin-left: 30px;
     font-size: 30px;
     text-decoration: underline;
     z-index: 1;
 }
 .navigation a {
     color: #606060;
+}
+.index-page .navigation {
+    margin-top: 12em;
+    margin-left: 30px;
+}
+.gallery-page .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/* Gallery Page */
+.gallery-page main {
+    height: unset;
+}
+.gallery-container {
+    width: 80%;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* height: 2000px; */
+    height: 124vw;
+}
+.gallery-container .artwork-container {
+    width: 50%;
+    margin: 0 24px 24px 0;
+    border: 6px ridge #cccccc;
+    position: relative;
+}
+@media screen and (max-width: 1000px) {
+    .gallery-container {
+        flex-wrap: nowrap;
+        height: unset;
+    }
+    .gallery-container .artwork-container {
+        width: 100%;
+    }
+}
+.gallery-container .artwork-container img {
+    max-width: 100%;
+    position: absolute;
+    clip: rect(0, 1000px, 0px, 0);
+	animation: dialup 10s linear forwards;
+}
+
+@keyframes dialup {
+	0% { clip: rect(0, 1000px, 0px, 0); }
+	10% { clip: rect(0, 1000px, 50px, 0); }
+	20% { clip: rect(0, 1000px, 100px, 0); }
+    30% { clip: rect(0, 1000px, 150px, 0); }
+    40% { clip: rect(0, 1000px, 200px, 0); }
+    50% { clip: rect(0, 1000px, 250px, 0); }
+    60% { clip: rect(0, 1000px, 300px, 0); }
+	70% { clip: rect(0, 1000px, 350px, 0); }
+    80% { clip: rect(0, 1000px, 400px, 0); }
+    90% { clip: rect(0, 1000px, 450px, 0); }
+	100% { clip: rect(0, 1000px, 500px, 0); }
 }
