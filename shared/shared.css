@@ -1,0 +1,66 @@
+@import url(style/normalize.css);
+@import url(style/base.css);
+
+/* Font Definition */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url(../assets/fonts/museo-sans/MuseoSans_500.otf) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans';
+    src: url(../assets/fonts/museo-sans/MuseoSans_300.otf) format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans';
+    src: url(../assets/fonts/museo-sans/MuseoSans_700.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UnifrakturCook';
+    src: url(../assets/fonts/UnifrakturCook-Bold.ttf) format("truetype");
+}
+
+/* 
+| ***** Global Definitions
+*/
+.mobile-only {
+    display:none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'MuseoSans', arial, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body {
+    background: black;
+    cursor: url(../assets/skull.gif) 50 50, auto;
+}
+
+.navigation {
+    position: absolute;
+    font-size: 30px;
+    text-decoration: underline;
+    z-index: 1;
+}
+
+.navigation a {
+    color: #606060;
+}

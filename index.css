@@ -1,0 +1,93 @@
+/************************/
+/**** Index CSS ****/
+/************************/
+
+.flames {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#hitCounter {
+    width: 284px;
+    height: 75px;
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+}
+#hitCounter h4 {
+    font-family: "Courier", Courier, monospace;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 12px 0 0;
+    letter-spacing: 12px;
+}
+#hitCounter p {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 4px;
+    color: white;
+    margin: 8px 0 0 0;
+    text-align: center;
+    font-family: 'MuseoSans', sans-serif;
+    font-weight: 300;
+}
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.flip {
+    transform: scaleX(-1);
+}
+.welcome img {
+    width: 50vw;
+}
+.inner-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ankhbar {
+    position:absolute;
+    bottom: -24px;
+    width: 100%;
+    mix-blend-mode: screen;
+}
+.ankhbar img {
+    width: 100%;
+}
+.dare-container, .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.dare-text, .image-alex {
+    max-width: 500px;
+}
+.skull-candle {
+    width: 75px;
+}
+.image-alex {
+    margin: 12px 24px 0;
+}
+.blood {
+    position:absolute;
+    bottom: -10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.index-page .navigation {
+    margin-top: 30%;
+    margin-left: 30px;
+}
+
+

@@ -1,0 +1,89 @@
+/* Gallery Page */
+.gallery-page main {
+    height: unset;
+}
+.gallery-page .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.gallery-container {
+    width: 80%;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* height: 2000px; */
+    height: 66vw;
+}
+.gallery-container .artwork-container {
+    width: 50%;
+    margin: 0 24px 24px 0;
+    border: 6px ridge #cccccc;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+    .gallery-container {
+        flex-wrap: nowrap;
+        height: unset;
+    }
+    .gallery-container .artwork-container {
+        width: 100%;
+    }
+}
+.gallery-container .artwork-container img {
+    max-width: 100%;
+    /* position: absolute; */
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+	animation: dialup 10s linear forwards;
+}
+
+@keyframes dialup {
+	0%      { clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%); }
+	10%     { clip-path: polygon(0 0, 100% 0, 100% 10%, 0 10%); }
+	20%     { clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%); }
+    30%     { clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%); }
+    40%     { clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%); }
+    50%     { clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); }
+    60%     { clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%); }
+	70%     { clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%); }
+    80%     { clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%); }
+    90%     { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%); }
+	100%    { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+}
+
+/* POPUPs */
+.gallery-popup {
+    visibility: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(45, 45, 45, 0.9);
+    display: flex;
+    padding: 100px;
+    color: white;
+}
+.gallery-popup.active {
+    visibility: visible;
+}
+.clear-button {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    top: 24px;
+    right: 24px;
+    font-size: 30px;
+    transform: scaleX(1.5);
+    z-index:10;
+    color: white;
+    visibility: hidden;
+}
+.clear-button.active {
+    visibility: visible;
+    cursor:pointer;
+}
