@@ -84,10 +84,26 @@
     width: 100%;
     max-width: 500px;
 }
-
 .index-page .navigation {
     margin-top: 30%;
     margin-left: 30px;
 }
-
+/* On Mobile, change navigation links to the bottom */
+@media screen and (max-width:950px) {
+    .navigation {
+        top: unset;
+        bottom: 0;
+        flex-direction: row;
+        margin-top: unset;
+        margin-left: unset;
+        margin-bottom: 0.5em;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 88%;
+    }
+    .navigation p:not(:last-child) {
+        margin-right:12px;
+    }
+}
 
