@@ -6,6 +6,7 @@ main { overflow: auto; }
     bottom: 0;
     left: 0;
     width: 100%;
+    pointer-events: none;
 }
 
 .header {
