@@ -50,7 +50,8 @@ main {
 }
 
 body {
-    background: black;
+    background: url(../assets/background.jpg) no-repeat center center fixed;
+    background-size: cover;
     cursor: url(../assets/skull.gif) 50 50, auto;
 }
 
@@ -63,4 +64,45 @@ body {
 
 .navigation a {
     color: #606060;
+}
+
+.gallery-page .navigation,
+.bio-page .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+/* POPUPs For gallery and Bio */
+.gallery-popup {
+    visibility: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(45, 45, 45, 0.9);
+    display: flex;
+    padding: 100px;
+    color: white;
+}
+.gallery-popup.active {
+    visibility: visible;
+}
+.clear-button {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    top: 24px;
+    right: 24px;
+    font-size: 30px;
+    transform: scaleX(1.5);
+    z-index:10;
+    color: white;
+    visibility: hidden;
+}
+.clear-button.active {
+    visibility: visible;
+    cursor:pointer;
 }

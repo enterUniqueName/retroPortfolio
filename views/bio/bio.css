@@ -1,0 +1,108 @@
+main { overflow: auto; }
+.navigation { padding-bottom: 2em; position:unset; }
+
+.flames {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.ankhbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ankhbar img {
+    width: calc(50em + 200px);
+    margin: 12px 24px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.trigger-image {
+    width: 50em;
+    margin: 12px 24px 24px;
+}
+
+.skull-candle {
+    width: 75px;
+}
+
+.bio-text {
+    color: white;
+    max-width: 50em;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0 48px;
+    white-space: pre-line;
+}
+
+/* POPUP */
+.manifesto-text {
+    overflow: hidden;
+    width:50%;
+    margin-right: 50px;
+    position:relative;
+}
+.manifesto-text::after {
+    content  : "";
+    position : absolute;
+    z-index  : 1;
+    bottom   : 0;
+    left     : 0;
+    pointer-events   : none;
+    background-image : linear-gradient(to bottom, 
+                        rgba(255,255,255, 0), 
+                        rgba(45,45,45, 0.9) 90%);
+    width    : 100%;
+    height   : 4em;
+}
+.desc-container {
+    height: 100%;
+    overflow: auto;
+}
+.desc-container p {
+    margin-top:0;
+    white-space: pre-line;
+}
+.manifesto-image {
+    width: 50%;
+    height:100%;
+}
+@media screen and (max-width:950px) {
+    .manifesto-popup {
+        flex-direction:column;
+        padding: 48px;
+        overflow: auto;
+    }
+    .manifesto-text {
+        width: 100%;
+        margin-right: unset;
+        overflow: unset;
+    }
+    .manifesto-text::after {
+        content: none;
+    }
+    .manifesto-image {
+        width: 100%;
+        height: 60vh;
+    }
+}

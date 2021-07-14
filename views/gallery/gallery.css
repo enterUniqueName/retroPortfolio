@@ -2,12 +2,6 @@
 .gallery-page main {
     height: unset;
 }
-.gallery-page .navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
 .gallery-container {
     width: 80%;
     margin: 24px auto;
@@ -53,37 +47,4 @@
     80%     { clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%); }
     90%     { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%); }
 	100%    { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-}
-
-/* POPUPs */
-.gallery-popup {
-    visibility: hidden;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: rgba(45, 45, 45, 0.9);
-    display: flex;
-    padding: 100px;
-    color: white;
-}
-.gallery-popup.active {
-    visibility: visible;
-}
-.clear-button {
-    position: fixed;
-    width: 36px;
-    height: 36px;
-    top: 24px;
-    right: 24px;
-    font-size: 30px;
-    transform: scaleX(1.5);
-    z-index:10;
-    color: white;
-    visibility: hidden;
-}
-.clear-button.active {
-    visibility: visible;
-    cursor:pointer;
 }
