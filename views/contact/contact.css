@@ -1,0 +1,92 @@
+main { overflow: auto; }
+.navigation { padding-bottom: 2em; position:unset; }
+
+.flames {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.ankhbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ankhbar img {
+    width: calc(50em + 200px);
+    margin: 12px 24px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.trigger-image {
+    width: 50em;
+    margin: 12px 24px 24px;
+}
+
+.skull-candle {
+    width: 75px;
+}
+
+.contact-text {
+    color: white;
+    max-width: 50em;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0 48px;
+    white-space: pre-line;
+}
+
+/* POPUP */
+.contact-popup {
+
+}
+.contact-form-container {
+    width:80%;
+    height: 100%;
+    overflow: auto;
+    margin: 0 auto;
+}
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 400px;
+    margin: 0 auto;
+    height: 100%;
+}
+.contact-form-container form label {
+    display:flex;
+    margin-bottom:24px;
+}
+.contact-form-container form label input, 
+.contact-form-container form label textarea {
+    width: 100%;
+    margin-left: 12px;
+}
+
+@media screen and (max-width:950px) {
+    .contact-popup {
+        padding: 48px;
+    }
+}

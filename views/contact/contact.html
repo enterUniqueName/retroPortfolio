@@ -12,91 +12,83 @@
   <link rel="icon" type="image/gif" href="../../assets/skull.gif"/>
 
   <link rel="stylesheet" href="../../shared/shared.css">
-  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="contact.css">
 
 </head>
 
-<body id="js-body" class="gallery-page">
-
-  <template id="galleryPopupTemplate">
-    <div class="description-container" style="
-      width: 30%;
-      margin-right: 50px;
-    ">
-      <h2 class="title"><slot name="title">NAME HERE</slot></h2>
-      <p class="desc"><slot name="description">DESCRIPTION HERE</slot></p>
-    </div>
-    <div class="carousel-container" style="
-      width: 70%;
-      height: 100%;
-      overflow: auto;
-    ">
-      <slot name="images">IMAGES HERE</slot>
-    </div>
-  </template>
+<body id="js-body" class="bio-page">
 
   <main>
     <div class="lace">
-      <img src="../../assets/lacebanner-gallery.gif" width="100%"/>
+      <img src="../../assets/contact-art/mailing.gif" width="100%"/>
     </div>
-    <div class="gallery-container">
-      <div id="image1" class="artwork-container">
-        <img src="../../assets/gallery-art/62A87B97-7741-42ED-B211-D0BD34998FE4.jpeg">
+
+    <div class="header">
+      <div class="centaur">
+        <img src="../../assets/centaur.gif"/>
       </div>
-      <div id="image2" class="artwork-container">
-        <img src="../../assets/gallery-art/6E4A600C-86EF-4F2C-9DF8-93CB2DB5BD8A.jpeg">
-      </div>
-      <div id="image3" class="artwork-container">
-        <img src="../../assets/gallery-art/IMG_3287.jpg">
-      </div>
+
+      <div class="centaur flip">
+        <img src="../../assets/centaur.gif"/>
       </div>
     </div>
+
+    <div class="image-container">
+      <div class="skull-candle">
+        <img src="../../assets/candleonskull.gif" width="100%"/>
+      </div>
+
+      <div id="trigger-image" class="trigger-image">
+        <img src="../../assets/contact-art/dinos.gif" width="100%"/>
+      </div>
+
+      <div class="skull-candle flip">
+        <img src="../../assets/candleonskull.gif" width="100%"/>
+      </div>
+    </div>
+
+    <div class="contact-text">
+      <p>By signing up for my mailing list, I will bombard your inbox with updates in the form of choose your own adventures, limited edition opportunities, and all things whimsical. You may opt out at any time, but why would you?
+      </p>
+    </div>
+
+    <div class="ankhbar">
+      <img src="../../assets/ankhbar.gif" width="100%"/>
+    </div>
+
+    <nav class="navigation">
+      <p><a href="../../index.html">HOME</a></p>
+      <p style="padding: 0 24px;"><a href="../bio/bio.html">BIO</a></p>
+      <p><a href="../contact/contact.html">MAILING LIST</a></p>
+    </nav>
+
+    <div class="flames">
+      <img src="../../assets/flames.gif" width="100%"/>
+    </div>
+
+<!-- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- -->
 
     <span id="clearButton" class="clear-button">☓</span>
 
-    <gallery-popup class="gallery-popup" id="popup1">
-      <span slot="description">
-        Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
-        
-        Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
-        
-        Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.
-      </span>
-      <img slot="images" src="../../assets/gallery-art/62A87B97-7741-42ED-B211-D0BD34998FE4.jpeg" style="max-width: 100%;">
-    </gallery-popup>
-    <gallery-popup class="gallery-popup" id="popup2">
-      <span slot="description">
-        Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
-        
-        Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
-        
-        Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.
-      </span>
-      <img slot="images" src="../../assets/gallery-art/6E4A600C-86EF-4F2C-9DF8-93CB2DB5BD8A.jpeg" style="max-width: 100%;">
-      <img slot="images" src="../../assets/gallery-art/IMG_3286.jpg" style="max-width: 100%;">
-    </gallery-popup>
-    <gallery-popup class="gallery-popup" id="popup3">
-      <span slot="description">
-        Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
-        
-        Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
-        
-        Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.
-      </span>
-      <img slot="images" src="../../assets/gallery-art/IMG_3287.jpg" style="max-width: 100%;">
-      <img slot="images" src="../../assets/gallery-art/IMG_3289.jpg" style="max-width: 100%;">
-      <img slot="images" src="../../assets/gallery-art/IMG_3292.jpg" style="max-width: 100%;">
-    </gallery-popup>
+    <div id="contact-popup" class="contact-popup gallery-popup" >
+      <div class="contact-form-container">
+        <form name="contact-list" method="POST" data-netlify="true">
+            <label>Name: <input type="text" name="name" required /></label>   
+
+            <label>Email: <input type="email" name="email" required /></label>
+
+            <label>Message: <textarea name="message" placeholder="Optional..." rows="5"></textarea></label>
+
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+    </div>
+    
   </main>
 
-  <nav class="navigation">
-      <p><a href="../../index.html">HOME</a></p>
-      <p style="padding: 0 24px;"><a href="#">BIO</a></p>
-      <p><a href="#">MAILING LIST</a></p>
-  </nav>
-
   <script src="../../shared/shared.js"></script>
-  <script src="gallery.js"></script>
+  <script src="contact.js"></script>
 
 </body>
 
