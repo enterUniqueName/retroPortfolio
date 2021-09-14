@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     /* height: 2000px; */
-    height: 66vw;
+    height: 150vw;
 }
 .gallery-container .artwork-container {
     width: 50%;
@@ -19,6 +19,13 @@
     position: relative;
     overflow: hidden;
 }
+.gallery-container #image1 { order: 1 }
+.gallery-container #image2 { order: 2 }
+.gallery-container #image3 { order: 3 }
+.gallery-container #image4 { order: 4 }
+.gallery-container #image5 { order: 5 }
+.gallery-container #image6 { order: 6 }
+
 @media screen and (max-width: 1000px) {
     .gallery-container {
         flex-wrap: nowrap;

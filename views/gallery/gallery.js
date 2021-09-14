@@ -35,6 +35,21 @@ image3.addEventListener('click', function() {
   openPopup('popup3');
 }, false);
 
+const image4 = document.getElementById('image4');
+image4.addEventListener('click', function() {
+  openPopup('popup4');
+}, false);
+
+const image5 = document.getElementById('image5');
+image5.addEventListener('click', function() {
+  openPopup('popup5');
+}, false);
+
+const image6 = document.getElementById('image6');
+image6.addEventListener('click', function() {
+  openPopup('popup6');
+}, false);
+
 // add more if there are more popups and more images
 
 // Function to clear the popup
